@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="time" v-model="startTime">
+      <input type="time" v-model="endTime">
+      <p>message is {{startTime}} </p>
+      <button id="yes">click</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://www.paypal.com/sdk/js?disable-funding=credit,card&client-id=AWKf9BNOv0dgHwDL3mD9Ysr86qntl-sZ61qpFOOrjw9oZoQCZg_aZ1Yxzh7NG99r_P58I100CQOs5CfI"></script>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/paypal.js"></script>
+  </body>
+</html>
