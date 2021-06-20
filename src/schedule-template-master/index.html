@@ -8,10 +8,9 @@
   <title>Schedule Template | CodyHouse</title>
 </head>
 <body>
-
   <div class="cd-schedule cd-schedule--loading js-cd-schedule">
     <div class="cd-schedule__timeline">
-      <ul>
+      <ul id="times">
         <li><span>09:00</span></li>
         <li><span>09:30</span></li>
         <li><span>10:00</span></li>
@@ -37,25 +36,8 @@
       <ul>
         <li class="cd-schedule__group">
           <div class="cd-schedule__top-info"><span>Monday</span></div>
-      <ul>
-            <li class="cd-schedule__event">
-              <a data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1" >
-                <em class="cd-schedule__name">Abs Circuit</em>
-              </a>
-            </li>
-  
-            <li class="cd-schedule__event">
-              <a data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2" >
-                <em class="cd-schedule__name">Rowing Workout</em>
-              </a>
-            </li>
-  
-            <li class="cd-schedule__event">
-              <a data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3" >
-                <em class="cd-schedule__name">Yoga Level 1</em>
-              </a>
-            </li>
-          </ul>
+      <ul id="monday">
+      </ul>
         </li>
   
         <li class="cd-schedule__group">
@@ -69,20 +51,18 @@
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-                <em class="cd-schedule__name">Restorative Yoga</em>
+              <a data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-2">
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1" >
+              <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-2" >
                 <em class="cd-schedule__name">Abs Circuit</em>
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="used" >
-                <em class="cd-schedule__name">Yoga Level 1</em>
+              <a data-start="16:00" data-end="17:00"  data-content="event-yoga-1" data-event="used" >
               </a>
             </li>
           </ul>
@@ -93,26 +73,24 @@
   
           <ul>
             <li class="cd-schedule__event">
-              <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4" >
+              <a data-start="09:00" data-end="10:30" data-content="event-restorative-yoga" data-event="event-2" >
                 <em class="cd-schedule__name">Restorative Yoga</em>
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="used" >
-                <em class="cd-schedule__name">Yoga Level 1</em>
+              <a data-start="11:00" data-end="12:00" data-content="event-yoga-1" data-event="used" >
               </a>
             </li>
-  
+
             <li class="cd-schedule__event">
-              <a data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2" >
+              <a data-start="12:00" data-end="14:00"  data-content="event-rowing-workout" data-event="event-2" >
                 <em class="cd-schedule__name">Rowing Workout</em>
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="used" >
-                <em class="cd-schedule__name">Yoga Level 1</em>
+              <a data-start="14:00" data-end="15:00" data-content="event-yoga-1" data-event="used" >
               </a>
             </li>
           </ul>
@@ -123,8 +101,7 @@
   
           <ul>
             <li class="cd-schedule__event">
-              <a data-start="09:30" data-end="15:30" data-content="event-abs-circuit" data-event="used" >
-                <em class="cd-schedule__name">Abs Circuit</em>
+              <a data-start="10:00" data-end="15:30" data-content="event-abs-circuit" data-event="used" >
               </a>
             </li>
   
@@ -142,14 +119,13 @@
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1" >
+              <a data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-2" >
                 <em class="cd-schedule__name">Abs Circuit</em>
               </a>
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="used" >
-                <em class="cd-schedule__name">Yoga Level 1</em>
+              <a data-start="16:00" data-end="17:00"  data-content="event-yoga-1" data-event="used" >
               </a>
             </li>
           </ul>
@@ -176,5 +152,7 @@
   </div> 
   <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
+
 </body>
 </html>

@@ -92,14 +92,6 @@
 			});
 		}
 		//close modal window
-		this.modalClose.addEventListener('click', function(event){
-			event.preventDefault();
-			if( !self.animating ) self.closeModal();
-		});
-		this.coverLayer.addEventListener('click', function(event){
-			event.preventDefault();
-			if( !self.animating ) self.closeModal();
-		});
 	};
 
 	ScheduleTemplate.prototype.openModal = function(target) {

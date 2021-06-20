@@ -3330,9 +3330,7 @@ a {
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
-.cd-schedule__event a::before {
-    content: attr(data-start) " - " attr(data-end);
-}
+
 @media (min-width: 48rem) {
     .js .cd-schedule__event {
         width: 40%;
@@ -3405,24 +3403,31 @@ a {
     background: hsl(199, 25%, 46%);
     background: var(--cd-color-event-1);
 }
+
+.cd-schedule__event [data-event="event-2"] {
+    height: 92%;
+    width: 96%;
+}
+
 .cd-schedule__event [data-event="event-2"],
 .cd-schedule-modal[data-event="event-2"] .cd-schedule-modal__header-bg {
-    background-color: #fff;
-    background-image: radial-gradient(circle, #34eb98 15%, transparent 10%), radial-gradient(circle, #34eb98 15%, transparent 10%);
+    background-color: rgba(70, 181, 97, 0.4);
     background-size: 100px 100px;
     background-position: 0 0, 50px 50px;
     border-radius: 20px;
-    margin: 5px 5px 5px 5px;
-    border: 1px solid #34eb98;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 1px solid #34eb98;  
 }
 .cd-schedule__event [data-event="used"],
 .cd-schedule-modal[data-event="used"] .cd-schedule-modal__header-bg {
-    margin: 3px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #ff7373 17.5%, #fff 17.5%, #fff 32.5%, #ff7373 32.5%, #ff7373 67.5%, #fff 67.5%, #fff 82.5%, #ff7373 82.5%);
-    background-size: 100px 100px;
-    background-position: 50px 50px;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(68, 44, 44, 0.1) !important;
+    margin-left: 0.1px;
+    margin-right: 0.1px;
+    border-radius: 0px;
+    color: white;
+    background: repeating-linear-gradient(-55deg,#E25261,#E25261 10px,#DD3243 10px,#DD3243 20px);
+    opacity: 0.65;
+    
 }
 .cd-schedule__event [data-event="event-4"],
 .cd-schedule-modal[data-event="event-4"] .cd-schedule-modal__header-bg {
